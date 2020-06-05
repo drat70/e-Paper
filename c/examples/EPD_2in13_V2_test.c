@@ -153,7 +153,7 @@ int EPD_2in13_V2_test(void)
     }
 
 #endif
-/7    printf("Clear...\r\n");
+//    printf("Clear...\r\n");
 
 //   EPD_2IN13_V2_Init(EPD_2IN13_V2_FULL);
 //    EPD_2IN13_V2_Clear();
