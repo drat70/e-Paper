@@ -53,13 +53,13 @@ try:
     time.sleep(2)
     
     # read bmp file on window
-    logging.info("3.read bmp file on window...")
+   # logging.info("3.read bmp file on window...")
     # epd.Clear(0xFF)
-    image1 = Image.new('1', (epd.height, epd.width), 255)  # 255: clear the frame
-    bmp = Image.open(os.path.join(picdir, '100x100.bmp'))
-    image1.paste(bmp, (2,2))    
-    epd.display(epd.getbuffer(image1))
-    time.sleep(2)
+    #image1 = Image.new('1', (epd.height, epd.width), 255)  # 255: clear the frame
+    #bmp = Image.open(os.path.join(picdir, '100x100.bmp'))
+    #image1.paste(bmp, (2,2))    
+    #epd.display(epd.getbuffer(image1))
+    #time.sleep(2)
     
     # # partial update
     logging.info("4.show time...")
@@ -77,11 +77,11 @@ try:
         epd.displayPartial(epd.getbuffer(time_image))
         num = num + 1
         if(num == 10):
-            break
+           break
     
-    logging.info("Clear...")
-    epd.init(epd.FULL_UPDATE)
-    epd.Clear(0xFF)
+#    logging.info("Clear...")
+#    epd.init(epd.FULL_UPDATE)
+#    epd.Clear(0xFF)
     
     logging.info("Goto Sleep...")
     epd.sleep()
