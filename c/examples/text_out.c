@@ -30,7 +30,7 @@
 #include "EPD_Test.h"
 #include "EPD_2in13_V2.h"
 
-int text_out(int RH, int TEMP)
+int text_out(int TEMP, int RH)
 {
     printf("EPD_2IN13_V2_test Demo\r\n");
     if(DEV_Module_Init()!=0){
@@ -70,7 +70,7 @@ int text_out(int RH, int TEMP)
     Paint_DrawString_EN(10, 10, "Temp:", &Font24, WHITE, BLACK);
     Paint_DrawString_EN(10, 60, "RH:", &Font24, WHITE, BLACK);
     
-    Paint_DrawNum(90, 10, Temp, &Font24, BLACK, WHITE);
+    Paint_DrawNum(90, 10, TEMP, &Font24, BLACK, WHITE);
     Paint_DrawNum(90, 60, RH, &Font24, BLACK, WHITE);
 
     // Paint_DrawLine(20, 10, 70, 60, BLACK, DOT_PIXEL_1X1, LINE_STYLE_SOLID);
