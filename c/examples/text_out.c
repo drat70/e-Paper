@@ -66,8 +66,14 @@ int text_out(void)
 
     // 2.Drawing on the image
     
-    Paint_DrawString_EN(10, 10, "Temp:", &Font24, BLACK, WHITE);
-    Paint_DrawString_EN(10, 60, "RH:", &Font24, BLACK, WHITE);
+    Temp = 95;
+    RH = 12;
+    
+    Paint_DrawString_EN(10, 10, "Temp:", &Font24, WHITE, BLACK);
+    Paint_DrawString_EN(10, 60, "RH:", &Font24, WHITE, BLACK);
+    
+    Paint_DrawNum(80, 10, Temp, &Font24, BLACK, WHITE);
+    Paint_DrawNum(80, 60, RH, &Font24, BLACK, WHITE);
 
     // Paint_DrawLine(20, 10, 70, 60, BLACK, DOT_PIXEL_1X1, LINE_STYLE_SOLID);
     // Paint_DrawLine(70, 10, 20, 60, BLACK, DOT_PIXEL_1X1, LINE_STYLE_SOLID);
