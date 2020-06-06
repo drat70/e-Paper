@@ -66,8 +66,8 @@ int text_out(void)
 
     // 2.Drawing on the image
     
-    Temp = 95;
-    RH = 12;
+    int Temp = 95;
+    int RH = 12;
     
     Paint_DrawString_EN(10, 10, "Temp:", &Font24, WHITE, BLACK);
     Paint_DrawString_EN(10, 60, "RH:", &Font24, WHITE, BLACK);
