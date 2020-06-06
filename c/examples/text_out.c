@@ -90,7 +90,6 @@ int text_out(void)
 #endif
 
 
-#endif
 //    printf("Clear...\r\n");
 
 //   EPD_2IN13_V2_Init(EPD_2IN13_V2_FULL);
