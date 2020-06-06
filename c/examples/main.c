@@ -13,12 +13,14 @@ void  Handler(int signo)
 
 
 
-int main(void)
+int main(int argc, char **argv)
 {
+
+
     // Exception handling:ctrl + c
     signal(SIGINT, Handler);
-    
-    text_out();
+         
+    text_out(argv[1],argv[2]);
     //EPD_2in13_V2_test();
 
     
