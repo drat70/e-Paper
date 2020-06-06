@@ -20,7 +20,7 @@ int main(int argc, char **argv)
     // Exception handling:ctrl + c
     signal(SIGINT, Handler);
          
-    text_out(argv[1],argv[2]);
+    text_out(atoi(argv[1]),atoi(argv[2]));
     //EPD_2in13_V2_test();
 
     
