@@ -19,8 +19,9 @@ int main(int argc, char **argv)
 
     // Exception handling:ctrl + c
     signal(SIGINT, Handler);
-         
-    text_out(atoi(argv[1]),atoi(argv[2]));
+    int num = (rand() % (30 + 20 + 1)) - 20;   
+    int num2 = (rand() % (100 - 0 + 1)) + 0;      
+    // text_out(atoi(argv[1]),atoi(argv[2]));
     //EPD_2in13_V2_test();
 
     
