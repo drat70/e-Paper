@@ -19,7 +19,8 @@ int main(int argc, char **argv)
 
     // Exception handling:ctrl + c
     signal(SIGINT, Handler);
-    int num = (rand() % (30 + 20 + 1)) - 20;   
+    srand ( time(NULL) );
+    int num = (rand() % (30 - 0 + 1)) + 0;   
     int num2 = (rand() % (100 - 0 + 1)) + 0;
     text_out(num,num2);
     // text_out(atoi(argv[1]),atoi(argv[2]));
